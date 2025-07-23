@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      // Redirect to /fredbirds-react/#/ for any 404 errors
+      // This handles cases where someone tries to access /fredbirds-react/events directly
+      var path = location.pathname.replace('/fredbirds-react', '');
+      if (path === '/' || path === '') {
+        location.replace('/fredbirds-react/#/');
+      } else {
+        location.replace('/fredbirds-react/#' + path);
+      }
+    </script>
+    <title>Redirecting...</title>
+  </head>
+  <body>
+    <p>Redirecting to <a href="/fredbirds-react/#/">Home</a>...</p>
+  </body>
+</html>

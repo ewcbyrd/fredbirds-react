@@ -4,11 +4,17 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/fredbirds-react/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-    <script type="module" crossorigin src="/fredbirds-react/assets/index-C9xQA3aC.js"></script>
+    <title>Fredericksburg Birding Club</title>
+    <script type="module" crossorigin src="/fredbirds-react/assets/index-D36Pn7NM.js"></script>
     <link rel="stylesheet" crossorigin href="/fredbirds-react/assets/index-D8b4DHJx.css">
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      // Redirect to hash route if not already using hash routing
+      if (!location.hash && location.pathname === '/fredbirds-react/') {
+        location.replace('/fredbirds-react/#/');
+      }
+    </script>
   </body>
 </html>
